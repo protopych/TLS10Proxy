@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE wap-provisioningdoc PUBLIC "-//WAPFORUM//DTD PROV 1.0//EN" "http://www.wapforum.org/DTD/prov.dtd">
+<wap-provisioningdoc version="1.0">
+    <characteristic type="BOOTSTRAP">
+        <parm name="NAME" value="{CONFIG-NAME}"/>
+    </characteristic>
+    <characteristic type="ACCESS">
+        <parm name="RULE" value="Default Rule"/>
+        <parm name="TO-PROXY" value="PROXY"/>
+    </characteristic>
+    <characteristic type="PXLOGICAL">
+        <parm name="PROXY-ID" value="PROXY"/>
+        <parm name="NAME" value="PROXY"/>
+        <characteristic type="PORT">
+            <parm name="PORTNBR" value="{PORT}"/>
+        </characteristic>
+        <characteristic type="PXPHYSICAL">
+            <parm name="PHYSICAL-PROXY-ID" value="PROXY"/>
+            <parm name="PXADDR" value="{IP}"/>
+            <parm name="PXADDRTYPE" value="IPV4"/>
+            <parm name="PUSHENABLED" value="0"/>
+            <parm name="TO-NAPID" value="INTERNET"/>
+        </characteristic>
+    </characteristic>
+    <characteristic type="NAPDEF">
+        <parm name="NAPID" value="INTERNET"/>
+        <parm name="BEARER" value="GSM-GPRS"/>
+        <parm name="NAME" value="{CONFIG-NAME}"/>
+        <parm name="NAP-ADDRESS" value="{APN}"/>
+        <parm name="NAP-ADDRTYPE" value="APN"/>
+        <parm name="INTERNET"/>
+    </characteristic>
+    <characteristic type="APPLICATION">
+        <parm name="APPID" value="w2"/>
+        <parm name="TO-NAPID" value="INTERNET"/>
+        <parm name="TO-PROXY" value="PROXY"/>
+        <parm name="NAME" value="{CONFIG-NAME}"/>
+        <characteristic type="RESOURCE">
+            <parm name="URI" value="{HOMEPAGE}"/>
+            <parm name="STARTPAGE"/>
+        </characteristic>
+    </characteristic>
+</wap-provisioningdoc>

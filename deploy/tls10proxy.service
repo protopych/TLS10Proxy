@@ -1,0 +1,13 @@
+[Unit]
+Description=HTTP proxy that downgrades HTTPS connections to TLS 1.0
+After=syslog.target
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/tls10proxy
+ExecStart=/opt/tls10proxy/tls10proxy
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

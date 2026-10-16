@@ -1,0 +1,8 @@
+[tls10proxy]
+enabled  = true
+filter   = tls10proxy-auth
+backend  = polling
+logpath  = /opt/tls10proxy/tls10proxy.log
+maxretry = 10
+findtime = 900
+bantime  = 3600
