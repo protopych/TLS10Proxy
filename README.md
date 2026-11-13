@@ -37,6 +37,8 @@ To install the binary to `/opt/tls10proxy` and register it as a systemd service,
 sudo make install
 ```
 
+*Hint*: you may want to edit `deploy/tls10proxy.service` before installation to adjust command line flags.
+
 To remove the service and the binary, run:
 
 ```bash
