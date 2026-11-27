@@ -69,7 +69,9 @@ chmod +x gen.sh
 ./gen.sh
 ```
 
-Follow the interactive prompts to provide the configuration name, proxy IP, port, APN, and homepage URL. Transfer the generated `.prov` file to the device via Bluetooth and activate it. After activation, visit `http://cert.install` in the device's browser to download and install the proxy's root CA certificate.
+Follow the interactive prompts to provide the configuration name, proxy IP, port, APN, and homepage URL.   
+Transfer the generated `.prov` file to the device via Bluetooth and activate it.    
+After activation, visit `http://cert.install` in the device's browser to download and install the proxy's root CA certificate.
 
 ## Command Line Parameters
 
